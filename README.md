@@ -6,27 +6,44 @@ Clean Co API is a Node.js-based RESTful API for managing cleaning service bookin
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Environment Variables](#environment-variables)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-  - [GET /api/v1/](#get-apiv1)
-  - [GET /api/v1/services](#get-apiv1services)
-  - [GET /api/v1/user/bookings](#get-apiv1userbookings)
-  - [POST /api/v1/auth/access-token](#post-apiv1authaccess-token)
-  - [POST /api/v1/user/create-booking](#post-apiv1usercreate-booking)
-  - [DELETE /api/v1/user/cancel-booking/:bookingId](#delete-apiv1usercancel-bookingbookingid)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+- [🛠️ Tech Stack](#tech-stack)
+- [📋 Prerequisites](#prerequisites)
+- [📦 Installation](#installation)
+- [🔧 Environment Variables](#environment-variables)
+- [🚀 Usage](#usage)
+- [📡 API Endpoints](#api-endpoints)
+  - [🏠 GET /api/v1/](#get-apiv1)
+  - [🔍 GET /api/v1/services](#get-apiv1services)
+  - [📨 GET /api/v1/user/bookings](#get-apiv1userbookings)
+  - [🔑 POST /api/v1/auth/access-token](#post-apiv1authaccess-token)
+  - [📝 POST /api/v1/user/create-booking](#post-apiv1usercreate-booking)
+  - [🗑️ DELETE /api/v1/user/cancel-booking/:bookingId](#delete-apiv1usercancel-bookingbookingid)
+- [📂 Project Structure](#project-structure)
+- [🤝 Contributing](#contributing)
+- [📜 License](#license)
 
-## Prerequisites
+## 🛠️ Tech Stack
+
+- **Node.js**: Server-side JavaScript runtime
+- **Express**: Web application framework for Node.js
+- **MongoDB**: NoSQL database used for storing service and booking data
+- **JWT (JSON Web Tokens)**: Used for authentication and authorization
+- **bcrypt.js**: Library for hashing passwords
+- **dotenv**: Module for loading environment variables from a .env file
+- **cors**: Middleware for enabling Cross-Origin Resource Sharing (CORS)
+- **cookie-parser**: Middleware for parsing cookies in requests
+- **MongoDB Node.js Driver**: Official MongoDB driver for Node.js
+- **ESLint**: JavaScript linting utility for code quality
+- **Prettier**: Code formatter for consistent code style
+- **Git**: Version control system for tracking changes in the project
+
+
+## 📋 Prerequisites
 
 - Node.js v14.x or higher
 - MongoDB v4.x or higher
 
-## Installation
+## 📦 Installation
 
 1. Clone the repository:
 
@@ -39,7 +56,8 @@ Clean Co API is a Node.js-based RESTful API for managing cleaning service bookin
    ```bash
    npm install
    ```
-3. Create a .env file in the root directory and add the following environment variables:
+## 🔧 Environment Variables
+ Create a .env file in the root directory and add the following environment variables:
 
    ```code
     MONGODB_URI= your_mongodb_connection_string
@@ -47,7 +65,7 @@ Clean Co API is a Node.js-based RESTful API for managing cleaning service bookin
     PORT= port_number
    ```
 
-## Usage
+## 🚀 Usage
 
 1. Start the server:
 
@@ -57,9 +75,9 @@ Clean Co API is a Node.js-based RESTful API for managing cleaning service bookin
 
 2. The API will be available at http://localhost:<PORT>/api/v1
 
-## API Endpoints
+## 📡 API Endpoints
 
-#### GET /api/v1/
+#### 🏠 GET /api/v1/
 
 Welcome route to test the connection.
 
@@ -71,7 +89,7 @@ Welcome route to test the connection.
   }
   ```
 
-#### GET /api/v1/services
+#### 🔍 GET /api/v1/services
 
 Fetch all available cleaning services. Requires a valid JWT token.
 
@@ -92,7 +110,7 @@ Fetch all available cleaning services. Requires a valid JWT token.
   ]
   ```
 
-#### GET /api/v1/user/bookings
+#### 📨 GET /api/v1/user/bookings
 
 Fetch all bookings for the authenticated user. Requires a valid JWT token.
 
@@ -121,7 +139,7 @@ Fetch all bookings for the authenticated user. Requires a valid JWT token.
   ]
   ```
 
-#### POST /api/v1/auth/access-token
+#### 🔑 POST /api/v1/auth/access-token
 
 Generate a JWT access token for the user.
 
@@ -140,7 +158,7 @@ Generate a JWT access token for the user.
   }
   ```
 
-#### POST /api/v1/user/create-booking
+#### 📝 POST /api/v1/user/create-booking
 
 Create a new booking for the user.
 
@@ -166,7 +184,7 @@ Create a new booking for the user.
   }
   ```
 
-#### DELETE /api/v1/user/cancel-booking/
+#### 🗑️ DELETE /api/v1/user/cancel-booking/:bookingId
 
 Delete a booking by its ID.
 
@@ -178,7 +196,7 @@ Delete a booking by its ID.
   }
   ```
 
-## Project Structure
+## 📂 Project Structure
 ```bash
 clean-co-api/
 ├── config/
@@ -195,10 +213,10 @@ clean-co-api/
 └── README.md              # Project documentation
 ```
 
-## Contributing
+## 🤝 Contributing
 Contributions are welcome! Please submit a pull request or open an issue to discuss your changes.
 
-## License
+## 📜 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 &copy; Md Shakil Hossain ~ 2024 
