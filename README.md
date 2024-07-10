@@ -197,19 +197,25 @@ Delete a booking by its ID.
 
 ## 📂 Project Structure
 ```bash
-clean-co-api/
-├── config/
-│   ├── db.js              # Database connection and collection handling
-├── middleware/
-│   ├── auth.js            # JWT verification middleware
-│   ├── logger.js          # Logger middleware
-├── routes/
-│   ├── cleanCoRoutes.js   # All API routes
-├── .env.example           # Example environment variables file
-├── .gitignore             # Git ignore file
-├── index.js               # Entry point of the application
-├── package.json           # Node.js dependencies and scripts
-└── README.md              # Project documentation
+clean-co-api
+├── config
+│   └── db.js
+├── middleware
+│   └── verifyToken.js
+├── routes
+│   └── cleanCoRoutes.js
+├── controllers
+│   └── authController.js
+│   └── bookingController.js
+│   └── serviceController.js
+├── models
+│   └── booking.js
+│   └── service.js
+├── .env
+├── index.js
+├── package.json
+└── README.md
+
 ```
 
 ## 🤝 Contributing
