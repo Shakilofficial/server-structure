@@ -28,7 +28,6 @@ Clean Co API is a Node.js-based RESTful API for managing cleaning service bookin
 - **Express**: Web application framework for Node.js
 - **MongoDB**: NoSQL database used for storing service and booking data
 - **JWT (JSON Web Tokens)**: Used for authentication and authorization
-- **bcrypt.js**: Library for hashing passwords
 - **dotenv**: Module for loading environment variables from a .env file
 - **cors**: Middleware for enabling Cross-Origin Resource Sharing (CORS)
 - **cookie-parser**: Middleware for parsing cookies in requests
