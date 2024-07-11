@@ -1,4 +1,4 @@
-# Standard server-structure
+![Github Cover](./Clean Co service.png)
 
 ### Clean Co API
 
