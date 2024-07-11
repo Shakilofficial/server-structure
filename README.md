@@ -1,4 +1,4 @@
-[Github Cover](/Clean%20Co%20service.png)
+[Github Cover](/cover.png)
 
 ### Clean Co API
 
